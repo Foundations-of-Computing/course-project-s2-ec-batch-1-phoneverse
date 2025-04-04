@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneVerse</title>
+    
+    <!-- linking CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <!-- website mame-->
+    <div class="nameplate">PhoneVerse</div>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <a onclick="showphones('Apple')">Apple</a>
+      <a onclick="showphones('Samsung')">Samsung</a>
+      <a onclick="showphones('Motorola')">Motorola</a>
+    </div>
+
+    <!-- content-->
+    <div class="content" id="phoneList">
+      <!-- welcome title -->
+      <div class="welcometitle">Welcome to PhoneVerse!</div>
+
+      <!-- welcome description -->
+      <p class="welcometext">
+        Explore the latest smartphones from different brands.<br />
+        Click on a brand to explore the details, compare specifications, and
+        find your next perfect device.
+      </p>
+
+      <!-- welcome image and buttom -->
+      <div class="imgbut">
+        <img
+          class="welcomeimage"
+          src="images/bg4.jpg"
+          alt="Welcome to PhoneVerse"
+        />
+        <a onclick="showphones('Apple')">Go to Main Page</a>
+      </div>
+    </div>
+
+    <!-- Popup for displaying phone details -->
+    <div id="phonePopup" class="phonepopup">
+      <div class="popupcontent">
+        <!-- close popup -->
+        <span class="closebtn" onclick="closePopup()">&times;</span>
+        
+        <!-- phone image -->
+        <img id="popupimage" src="" alt="Phone Image" />
+        
+        <!-- phone specifications -->
+        <div class="popupdetails">
+          <h2 id="popuptitle"></h2>
+          <p>
+            <strong>Specifications:</strong> <span id="popupdisplays"></span>
+          </p>
+          <p><strong>Battery Life:</strong> <span id="popupbattery"></span></p>
+          <p><strong>Camera:</strong> <span id="popupcamera"></span></p>
+          <p><strong>Storage:</strong> <span id="popupstorage"></span></p>
+          <p><strong>Price:</strong> <span id="popupprice"></span></p>
+          <p><strong>Rating:</strong> <span id="popuprating"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- linking javaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

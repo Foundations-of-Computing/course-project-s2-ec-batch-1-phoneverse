@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: #92b9c9;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .nameplate {
+    background-color: rgb(39, 37, 37);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+    padding: 40px;
+    font-size: 22px;
+    background-color: #aed2f2;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .welcometitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .welcometext {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+  }
+
+  .welcomeimage {
+    width: 60%;
+    max-width: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .imgbut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0px 20px 20px 20px;
+    gap: 10px;
+    background-color: #aed2f2;
+    box-sizing: border-box;
+  }
+
+  .imgbut > * {
+    padding: 15px;
+    background-color: #aed2f2;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .toolbar {
+    background-color: #444;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid black;
+  }
+  .toolbar a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+
+  .phonecontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .phonecard {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+  }
+  .phonecard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .phonepopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid black;
+  }
+
+  .popupcontent {
+    display: flex;
+    align-items: center;
+  }
+
+  .popupcontent img {
+    max-width: 40%;
+    border-radius: 10px;
+  }
+
+  .popupdetails {
+    padding-left: 20px;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+  }
